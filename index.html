@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>SoundBars</title>
+  <body>
+    <audio id="applause">
+        <a href="https://www.videvo.net/sound-effect/fire-campfire-01/419492/">sound!</a>
+    </audio>
+
+    <button onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+    <script>
+      var x = document.getElementById("applause");
+
+      function playAudio() {
+        x.play();
+      }
+
+      function pauseAudio() {
+        x.pause();
+      }
+    </script>
+  </body>
+</html>
